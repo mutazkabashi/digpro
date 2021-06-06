@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	template="#{layoutMB.template}">
+
+	<ui:define name="head-end">
+		<ui:param name="renderBreadCrumb" value="false" />
+	</ui:define>
+
+	<ui:define name="title">
+		<h2 class="align-center">Welcome to the Digpro Dashboard</h2>
+
+		<h:form id="CoordinatesForm" style="margin-right: 10%">
+        
+        <h4 class="align-center"><h:outputLabel id="ChartErrorMessage"  style="color:red" value="#{chartJsView.errorMessage}" /></h4>
+        
+           
+			<h2>Coordinates Map/Chart</h2>
+			<p:lineChart id="lineChart" model="#{chartJsView.lineModel}"
+				style="width: 100%; height: 500px;" />
+
+			<p:poll id="pollLineChart"
+				interval="#{chartJsView.refreshTimeInterval}"
+				listener="#{chartJsView.createLineModel}" update="lineChart"
+				autoStart="#{chartJsView.automaticChartUpdate}" />
+
+			<br />
+
+			<h3>Line Chart Settings</h3>
+			<h:outputLabel id="FormActionsMessage" style="color:red" value="#{chartJsView.fromActionsMessage}" />
+           <br/>
+			<div>
+				<h:panelGrid columns="4" style="margin-left:10%;width:50%">
+					<h:outputLabel id="inputChartUpdateLabel" value="Chart Update" />
+					<p:selectOneMenu id="inputChartUpdate"
+						value="#{chartJsView.automaticChartUpdate}" required="true">
+						<f:selectItem itemLabel="Select One" itemValue="" />
+						<f:selectItem itemLabel="Auto Update" itemValue="true" />
+						<f:selectItem itemLabel="Manual Update" itemValue="false" />
+						
+					</p:selectOneMenu>
+
+					<h:outputLabel id="inputRefreshTimeIntervalLabel"
+						value="Update Time Interval" />
+					<h:inputText id="inputRefreshTimeInterval"
+						value="#{chartJsView.refreshTimeInterval}" />
+
+				</h:panelGrid>
+				
+				<br/>
+				<div class="col-xs-12" style="margin-left: 15%">
+						<p:commandButton id="saveButton" styleClass="btn btn-success btn-block" style="width:25%"
+							action="#{chartJsView.save}" onclick="showBar()" value="Save"
+							update="@form" />
+							<p:commandButton id="updateButton"  styleClass="btn btn-success btn-block" style="width:25%"
+							action="#{chartJsView.createLineModel}"  value="Refresh" 
+							update="@form"
+							/>
+						<p:commandButton id="aboutTheAppButton"  styleClass="btn btn-success btn-block" style="width:25%"
+							actionListener="#{chartJsView.showAboutTheApp}"  value="About the App" 
+							immediate="true"
+							/>
+							
+					</div>
+			</div>
+		</h:form>
+		
+		
+
+	</ui:define>
+
+
+</ui:composition>

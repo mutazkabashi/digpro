@@ -1,0 +1,51 @@
+= DigPro Code Test assignment project
+
+This project is responsible for getting  coordinates from an online servlet, and display these coordinates on the 
+screen as a chart. the application could update/refresh the coordinates automatically or manually (through the screen or a configuration file).
+
+
+== Technology stack Used To develop this project
+-Java 11 (jdk-11.0.9+11)
+-Spring Boot as (Dependency Injection Tool) +
+-Java server Faces (JSF) and PrimeFaces for Building Web-Interface +
+-OKHttp Library to call servlet and send Get request +
+-Junit & Mocikto For Uint Testing
+
+== Project Structure
+The source-code of the project follow the SOLID princile to make the project felxible, testable  and open to add new features.
+For example , we didved the project into multiple components such as  HttpClient (an interface) which is resoposbile for 
+making a request to external Servlet/Rest-api web services. The libraray which we use for this project is [OKHttp] , but we could
+use other libaray by implementing the HttpClient Interface and use Spring to inject the new implementation to the other classes which
+use the http client interface without changing the other classes code. the same logic apply to other components such as [Parser]
+and [Coordiante Convertor].
+
+
+Project code divided into 3 major parts +
+
+1- Java Code which is divided into
+    -Backend (responsible for calling /send get request to servlet ,
+     parsing servlet's response and convert it to Coordiantes Objects)
+    -Frontend (Responsile for displaying these coordiantde as map/chart on user screen)
+ 2- JSF Code/tags to design user interface
+ 3-Configuration file  , which holds the project's configuration values such as Error messages, refreshInterval,chartUpdate (for chart automatic update).
+   For more info check [digpro/src/main/resources/application.properties] file.
+   Note:- To override config file parametrs, create folder called [config] beside the war file and create new file inside that config folder called 
+   [application.properties] with the values you want to override 
+
+
+ 
+== Running
+
+This starter runs via *SpringBoot* using the `maven` command:
+
+ 
+`mvn spring-boot:run` *or* 
+
+`mvn clean package && java -jar target/codetest-1.0.war` *or*
+
+`./run.sh/run.cmd`
+
+open broswer and type the following URL http://localhost:8080/index.jsf 
+
+Application logs will be printed to [codetest.log] file
+  

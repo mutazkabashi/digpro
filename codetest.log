@@ -1,0 +1,717 @@
+2021-06-06 12:31:03.560  INFO 16745 --- [restartedMain] com.digpro.codetest.AdminBootMain        : Starting AdminBootMain on mutaz-Inspiron-5548 with PID 16745 (/home/mutaz/source_code/eclipse/workspaces/sccp/digpro/target/classes started by mutaz in /home/mutaz/source_code/eclipse/workspaces/sccp/digpro)
+2021-06-06 12:31:03.561 DEBUG 16745 --- [restartedMain] com.digpro.codetest.AdminBootMain        : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2021-06-06 12:31:03.571  INFO 16745 --- [restartedMain] com.digpro.codetest.AdminBootMain        : No active profile set, falling back to default profiles: default
+2021-06-06 12:31:03.701  INFO 16745 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30b37f1f: startup date [Sun Jun 06 12:31:03 EAT 2021]; root of context hierarchy
+2021-06-06 12:31:05.712  INFO 16745 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2021-06-06 12:31:05.807  INFO 16745 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:31:05.810  INFO 16745 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'jsf.adminfaces-org.joinfaces.autoconfigure.adminfaces.AdminfacesProperties' of type [org.joinfaces.autoconfigure.adminfaces.AdminfacesProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:31:05.811  INFO 16745 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.adminfaces.AdminfacesAutoConfiguration' of type [org.joinfaces.autoconfigure.adminfaces.AdminfacesAutoConfiguration$$EnhancerBySpringCGLIB$$f5cfac3c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:31:05.836  INFO 16745 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$1f09d870] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:31:05.843  INFO 16745 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$d3385d76] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:31:06.416  INFO 16745 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-06 12:31:06.457  INFO 16745 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-06 12:31:06.457  INFO 16745 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2021-06-06 12:31:06.463  INFO 16745 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2021-06-06 12:31:07.893  INFO 16745 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-06-06 12:31:07.924  INFO 16745 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-06 12:31:07.925  INFO 16745 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4224 ms
+2021-06-06 12:31:07.986  WARN 16745 --- [localhost-startStop-1] o.j.a.a.AdminfacesAutoConfiguration      : Changing primefaces fontAwesome from 'false' to 'true'.
+2021-06-06 12:31:07.992  WARN 16745 --- [localhost-startStop-1] o.j.a.a.AdminfacesAutoConfiguration      : Changing primefaces theme from 'aristo' to 'admin'.
+2021-06-06 12:31:08.261  INFO 16745 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2021-06-06 12:31:08.263  INFO 16745 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet adminLogoutServlet mapped to [/admin-logout]
+2021-06-06 12:31:08.289  INFO 16745 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-06-06 12:31:08.290  INFO 16745 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-06-06 12:31:08.290  INFO 16745 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'com.github.adminfaces.template.session.AdminFilter' to urls: [/*]
+2021-06-06 12:31:09.103  INFO 16745 --- [localhost-startStop-1] org.reflections.Reflections              : Reflections took 701 ms to scan 7 urls, producing 892 keys and 4314 values 
+2021-06-06 12:31:09.503  INFO 16745 --- [localhost-startStop-1] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.4 ( 20180405-0442 7a05fbdf38c7d725ccac9237e44de6dbc77bee7d) for context ''
+2021-06-06 12:31:09.790  INFO 16745 --- [localhost-startStop-1] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2021-06-06 12:31:10.765  INFO 16745 --- [localhost-startStop-1] .w.PostConstructApplicationEventListener : Running on PrimeFaces 7.0
+2021-06-06 12:31:10.770  INFO 16745 --- [localhost-startStop-1] c.g.a.t.event.AdminSystemEventListener   : Using Admin Template 1.0.2 and Admin Theme 1.0.2
+2021-06-06 12:31:10.771  INFO 16745 --- [localhost-startStop-1] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2021-06-06 12:31:10.771  INFO 16745 --- [localhost-startStop-1] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2021-06-06 12:31:11.821  INFO 16745 --- [restartedMain] o.s.aop.framework.CglibAopProxy          : Method [java.util.Map javax.faces.component.UIComponentBase.getDescriptorMap()] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2021-06-06 12:31:12.312  INFO 16745 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-06 12:31:12.396  INFO 16745 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-06-06 12:31:12.564  INFO 16745 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-06 12:31:12.569  INFO 16745 --- [restartedMain] com.digpro.codetest.AdminBootMain        : Started AdminBootMain in 10.054 seconds (JVM running for 12.406)
+2021-06-06 12:31:54.231  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : inilization of Chat screen
+2021-06-06 12:31:54.232  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:31:54.232  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:31:54.233  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:31:54.233  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:31:54.322  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:31:57.829  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:31:57.829  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:31:57.829  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:31:57.830 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:31:57.830 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-1400, x=64.0, y=786.0]
+2021-06-06 12:31:57.830 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-636, x=272.0, y=781.0]
+2021-06-06 12:31:57.830 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1394, x=747.0, y=1019.0]
+2021-06-06 12:31:57.830 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1136, x=694.0, y=-42.0]
+2021-06-06 12:31:57.830 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1412, x=540.0, y=864.0]
+2021-06-06 12:31:57.830 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-902, x=234.0, y=1385.0]
+2021-06-06 12:31:57.830 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1038, x=390.0, y=1097.0]
+2021-06-06 12:31:57.831  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:31:57.832  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : inilization of Chat screen finshed
+2021-06-06 12:32:30.041  INFO 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:32:30.041  INFO 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:32:30.041  INFO 16745 --- [http-nio-8080-exec-6] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:32:30.041  INFO 16745 --- [http-nio-8080-exec-6] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:32:30.041  INFO 16745 --- [http-nio-8080-exec-6] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:32:33.820  INFO 16745 --- [http-nio-8080-exec-6] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:32:33.820  INFO 16745 --- [http-nio-8080-exec-6] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:32:33.820  INFO 16745 --- [http-nio-8080-exec-6] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:32:33.820 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:32:33.820 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-1277, x=489.0, y=-108.0]
+2021-06-06 12:32:33.820 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-752, x=-64.0, y=1218.0]
+2021-06-06 12:32:33.820 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1425, x=306.0, y=-11.0]
+2021-06-06 12:32:33.820 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1320, x=393.0, y=-412.0]
+2021-06-06 12:32:33.820 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1055, x=-100.0, y=176.0]
+2021-06-06 12:32:33.820 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1194, x=663.0, y=896.0]
+2021-06-06 12:32:33.820 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-691, x=55.0, y=1418.0]
+2021-06-06 12:32:33.820 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1216, x=262.0, y=1410.0]
+2021-06-06 12:32:33.820  INFO 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:32:59.994  INFO 16745 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:32:59.994  INFO 16745 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:32:59.994  INFO 16745 --- [http-nio-8080-exec-10] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:32:59.995  INFO 16745 --- [http-nio-8080-exec-10] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:32:59.995  INFO 16745 --- [http-nio-8080-exec-10] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:33:03.744  INFO 16745 --- [http-nio-8080-exec-10] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:33:03.744  INFO 16745 --- [http-nio-8080-exec-10] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:33:03.744  INFO 16745 --- [http-nio-8080-exec-10] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:33:03.744 DEBUG 16745 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:33:03.744 DEBUG 16745 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-1321, x=6.0, y=720.0]
+2021-06-06 12:33:03.744 DEBUG 16745 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-1451, x=-20.0, y=1094.0]
+2021-06-06 12:33:03.745 DEBUG 16745 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-853, x=281.0, y=75.0]
+2021-06-06 12:33:03.745 DEBUG 16745 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1143, x=248.0, y=-497.0]
+2021-06-06 12:33:03.745 DEBUG 16745 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-851, x=513.0, y=1113.0]
+2021-06-06 12:33:03.745 DEBUG 16745 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-848, x=558.0, y=972.0]
+2021-06-06 12:33:03.745 DEBUG 16745 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-633, x=-127.0, y=1405.0]
+2021-06-06 12:33:03.745 DEBUG 16745 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-958, x=-165.0, y=1190.0]
+2021-06-06 12:33:03.745 DEBUG 16745 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1340, x=406.0, y=355.0]
+2021-06-06 12:33:03.745 DEBUG 16745 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1330, x=307.0, y=1040.0]
+2021-06-06 12:33:03.745 DEBUG 16745 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1000, x=331.0, y=578.0]
+2021-06-06 12:33:03.745 DEBUG 16745 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-1054, x=104.0, y=1204.0]
+2021-06-06 12:33:03.745 DEBUG 16745 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-1064, x=652.0, y=602.0]
+2021-06-06 12:33:03.745 DEBUG 16745 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-866, x=-142.0, y=892.0]
+2021-06-06 12:33:03.745  INFO 16745 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:33:29.982  INFO 16745 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:33:29.982  INFO 16745 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:33:29.982  INFO 16745 --- [http-nio-8080-exec-7] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:33:29.982  INFO 16745 --- [http-nio-8080-exec-7] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:33:29.982  INFO 16745 --- [http-nio-8080-exec-7] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:33:32.409  INFO 16745 --- [http-nio-8080-exec-7] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:33:32.409  INFO 16745 --- [http-nio-8080-exec-7] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:33:32.409  INFO 16745 --- [http-nio-8080-exec-7] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:33:32.409 DEBUG 16745 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:33:32.409 DEBUG 16745 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1116, x=296.0, y=1462.0]
+2021-06-06 12:33:32.409 DEBUG 16745 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-726, x=299.0, y=266.0]
+2021-06-06 12:33:32.409 DEBUG 16745 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1376, x=638.0, y=1120.0]
+2021-06-06 12:33:32.409 DEBUG 16745 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-996, x=694.0, y=1170.0]
+2021-06-06 12:33:32.409 DEBUG 16745 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-581, x=397.0, y=1155.0]
+2021-06-06 12:33:32.409 DEBUG 16745 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1118, x=-205.0, y=185.0]
+2021-06-06 12:33:32.409 DEBUG 16745 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-863, x=319.0, y=1000.0]
+2021-06-06 12:33:32.409  INFO 16745 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:33:59.246  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:33:59.246  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:33:59.246  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:33:59.246  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:33:59.246  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:34:09.599  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:34:09.599  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:34:09.599  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:34:09.599 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:34:09.599 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-948, x=310.0, y=1184.0]
+2021-06-06 12:34:09.599 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-939, x=714.0, y=258.0]
+2021-06-06 12:34:09.599 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1497, x=-28.0, y=907.0]
+2021-06-06 12:34:09.599 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-1263, x=396.0, y=289.0]
+2021-06-06 12:34:09.599 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1059, x=-135.0, y=1122.0]
+2021-06-06 12:34:09.599 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1184, x=-12.0, y=815.0]
+2021-06-06 12:34:09.599 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-767, x=254.0, y=1177.0]
+2021-06-06 12:34:09.599 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-1242, x=-206.0, y=-154.0]
+2021-06-06 12:34:09.599 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-985, x=638.0, y=447.0]
+2021-06-06 12:34:09.599  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:34:29.255  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:34:29.255  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:34:29.255  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:34:29.256  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:34:29.256  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:34:35.017  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:34:35.018  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:34:35.018  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:34:35.018 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:34:35.018 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-727, x=492.0, y=-405.0]
+2021-06-06 12:34:35.018 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-935, x=499.0, y=-394.0]
+2021-06-06 12:34:35.018 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1499, x=-193.0, y=1352.0]
+2021-06-06 12:34:35.018 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1161, x=378.0, y=-80.0]
+2021-06-06 12:34:35.018 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-1239, x=278.0, y=184.0]
+2021-06-06 12:34:35.018 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1419, x=614.0, y=279.0]
+2021-06-06 12:34:35.018 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1416, x=-236.0, y=1128.0]
+2021-06-06 12:34:35.018 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1412, x=196.0, y=-115.0]
+2021-06-06 12:34:35.018 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-796, x=600.0, y=105.0]
+2021-06-06 12:34:35.018 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1343, x=-114.0, y=1406.0]
+2021-06-06 12:34:35.018 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-661, x=597.0, y=474.0]
+2021-06-06 12:34:35.018 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1405, x=653.0, y=1342.0]
+2021-06-06 12:34:35.018 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-508, x=-78.0, y=62.0]
+2021-06-06 12:34:35.018 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1416, x=36.0, y=1132.0]
+2021-06-06 12:34:35.018  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:34:59.239  INFO 16745 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:34:59.239  INFO 16745 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:34:59.239  INFO 16745 --- [http-nio-8080-exec-4] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:34:59.240  INFO 16745 --- [http-nio-8080-exec-4] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:34:59.240  INFO 16745 --- [http-nio-8080-exec-4] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:35:01.127  INFO 16745 --- [http-nio-8080-exec-4] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:35:01.127  INFO 16745 --- [http-nio-8080-exec-4] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:35:01.127  INFO 16745 --- [http-nio-8080-exec-4] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:35:01.127 DEBUG 16745 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:35:01.127 DEBUG 16745 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1458, x=158.0, y=-382.0]
+2021-06-06 12:35:01.127 DEBUG 16745 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-669, x=444.0, y=-146.0]
+2021-06-06 12:35:01.127 DEBUG 16745 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-550, x=-144.0, y=-467.0]
+2021-06-06 12:35:01.127 DEBUG 16745 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-560, x=62.0, y=963.0]
+2021-06-06 12:35:01.127 DEBUG 16745 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1493, x=17.0, y=334.0]
+2021-06-06 12:35:01.127 DEBUG 16745 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1172, x=193.0, y=-24.0]
+2021-06-06 12:35:01.127 DEBUG 16745 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1432, x=343.0, y=-458.0]
+2021-06-06 12:35:01.127  INFO 16745 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:35:29.972  INFO 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:35:29.972  INFO 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:35:29.972  INFO 16745 --- [http-nio-8080-exec-3] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:35:29.972  INFO 16745 --- [http-nio-8080-exec-3] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:35:29.972  INFO 16745 --- [http-nio-8080-exec-3] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:35:36.307  INFO 16745 --- [http-nio-8080-exec-3] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:35:36.307  INFO 16745 --- [http-nio-8080-exec-3] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:35:36.307  INFO 16745 --- [http-nio-8080-exec-3] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:35:36.307 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:35:36.307 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1068, x=75.0, y=-253.0]
+2021-06-06 12:35:36.307 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1156, x=713.0, y=696.0]
+2021-06-06 12:35:36.307 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-833, x=390.0, y=508.0]
+2021-06-06 12:35:36.307 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1449, x=671.0, y=715.0]
+2021-06-06 12:35:36.307 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1255, x=699.0, y=-300.0]
+2021-06-06 12:35:36.307 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-1467, x=243.0, y=1204.0]
+2021-06-06 12:35:36.307 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-780, x=400.0, y=1143.0]
+2021-06-06 12:35:36.307 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1159, x=-6.0, y=972.0]
+2021-06-06 12:35:36.308 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-870, x=41.0, y=385.0]
+2021-06-06 12:35:36.308 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1398, x=-95.0, y=696.0]
+2021-06-06 12:35:36.308 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1106, x=688.0, y=919.0]
+2021-06-06 12:35:36.308 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1258, x=185.0, y=1222.0]
+2021-06-06 12:35:36.308 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-1250, x=243.0, y=1263.0]
+2021-06-06 12:35:36.308  INFO 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:35:59.975  INFO 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:35:59.975  INFO 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:35:59.976  INFO 16745 --- [http-nio-8080-exec-6] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:35:59.976  INFO 16745 --- [http-nio-8080-exec-6] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:35:59.976  INFO 16745 --- [http-nio-8080-exec-6] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:36:04.976  INFO 16745 --- [http-nio-8080-exec-6] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:36:04.976  INFO 16745 --- [http-nio-8080-exec-6] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:36:04.976  INFO 16745 --- [http-nio-8080-exec-6] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:36:04.976 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:36:04.976 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-816, x=-162.0, y=-452.0]
+2021-06-06 12:36:04.977 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1122, x=-40.0, y=-151.0]
+2021-06-06 12:36:04.977 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1232, x=321.0, y=1162.0]
+2021-06-06 12:36:04.977 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1338, x=-144.0, y=1332.0]
+2021-06-06 12:36:04.977 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-794, x=85.0, y=1359.0]
+2021-06-06 12:36:04.977 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-830, x=-245.0, y=959.0]
+2021-06-06 12:36:04.977 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1372, x=423.0, y=837.0]
+2021-06-06 12:36:04.977 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-752, x=-69.0, y=897.0]
+2021-06-06 12:36:04.977 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1448, x=361.0, y=228.0]
+2021-06-06 12:36:04.977 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-1131, x=-240.0, y=-13.0]
+2021-06-06 12:36:04.978 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1178, x=665.0, y=-3.0]
+2021-06-06 12:36:04.978 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-512, x=194.0, y=323.0]
+2021-06-06 12:36:04.978 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1107, x=280.0, y=-98.0]
+2021-06-06 12:36:04.978 DEBUG 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-743, x=441.0, y=-148.0]
+2021-06-06 12:36:04.978  INFO 16745 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:36:15.969  INFO 16745 --- [Thread-6] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30b37f1f: startup date [Sun Jun 06 12:31:03 EAT 2021]; root of context hierarchy
+2021-06-06 12:36:15.971  INFO 16745 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-06-06 12:36:16.251  INFO 16745 --- [restartedMain] com.digpro.codetest.AdminBootMain        : Starting AdminBootMain on mutaz-Inspiron-5548 with PID 16745 (/home/mutaz/source_code/eclipse/workspaces/sccp/digpro/target/classes started by mutaz in /home/mutaz/source_code/eclipse/workspaces/sccp/digpro)
+2021-06-06 12:36:16.251 DEBUG 16745 --- [restartedMain] com.digpro.codetest.AdminBootMain        : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2021-06-06 12:36:16.251  INFO 16745 --- [restartedMain] com.digpro.codetest.AdminBootMain        : No active profile set, falling back to default profiles: default
+2021-06-06 12:36:16.253  INFO 16745 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@17150d13: startup date [Sun Jun 06 12:36:16 EAT 2021]; root of context hierarchy
+2021-06-06 12:36:16.456  INFO 16745 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2021-06-06 12:36:16.465  INFO 16745 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:36:16.467  INFO 16745 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'jsf.adminfaces-org.joinfaces.autoconfigure.adminfaces.AdminfacesProperties' of type [org.joinfaces.autoconfigure.adminfaces.AdminfacesProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:36:16.467  INFO 16745 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.adminfaces.AdminfacesAutoConfiguration' of type [org.joinfaces.autoconfigure.adminfaces.AdminfacesAutoConfiguration$$EnhancerBySpringCGLIB$$f5cfac3c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:36:16.468  INFO 16745 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$1f09d870] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:36:16.469  INFO 16745 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$d3385d76] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:36:16.501  INFO 16745 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-06 12:36:16.502  INFO 16745 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-06 12:36:16.502  INFO 16745 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2021-06-06 12:36:16.566  INFO 16745 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-06-06 12:36:16.567  INFO 16745 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-06 12:36:16.567  INFO 16745 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 315 ms
+2021-06-06 12:36:16.579  WARN 16745 --- [localhost-startStop-1] o.j.a.a.AdminfacesAutoConfiguration      : Changing primefaces fontAwesome from 'false' to 'true'.
+2021-06-06 12:36:16.580  WARN 16745 --- [localhost-startStop-1] o.j.a.a.AdminfacesAutoConfiguration      : Changing primefaces theme from 'aristo' to 'admin'.
+2021-06-06 12:36:16.599  INFO 16745 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2021-06-06 12:36:16.600  INFO 16745 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet adminLogoutServlet mapped to [/admin-logout]
+2021-06-06 12:36:16.601  INFO 16745 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-06-06 12:36:16.601  INFO 16745 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-06-06 12:36:16.601  INFO 16745 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'com.github.adminfaces.template.session.AdminFilter' to urls: [/*]
+2021-06-06 12:36:16.872  INFO 16745 --- [localhost-startStop-1] org.reflections.Reflections              : Reflections took 262 ms to scan 7 urls, producing 892 keys and 4314 values 
+2021-06-06 12:36:16.893  INFO 16745 --- [localhost-startStop-1] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.4 ( 20180405-0442 7a05fbdf38c7d725ccac9237e44de6dbc77bee7d) for context ''
+2021-06-06 12:36:16.991  INFO 16745 --- [localhost-startStop-1] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2021-06-06 12:36:17.196  INFO 16745 --- [localhost-startStop-1] .w.PostConstructApplicationEventListener : Running on PrimeFaces 7.0
+2021-06-06 12:36:17.196  INFO 16745 --- [localhost-startStop-1] c.g.a.t.event.AdminSystemEventListener   : Using Admin Template 1.0.2 and Admin Theme 1.0.2
+2021-06-06 12:36:17.196  INFO 16745 --- [localhost-startStop-1] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2021-06-06 12:36:17.197  INFO 16745 --- [localhost-startStop-1] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2021-06-06 12:36:17.234  WARN 16745 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [chartJsView] for session [A6B6776B11B1200564BC40D61CB7CD15]
+2021-06-06 12:36:17.348  INFO 16745 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-06 12:36:17.359  INFO 16745 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-06-06 12:36:17.370  INFO 16745 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-06 12:36:17.370  INFO 16745 --- [restartedMain] com.digpro.codetest.AdminBootMain        : Started AdminBootMain in 1.138 seconds (JVM running for 317.207)
+2021-06-06 12:36:17.389  INFO 16745 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-06-06 12:36:30.181  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : inilization of Chat screen
+2021-06-06 12:36:30.182  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:36:30.182  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:36:30.182  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:36:30.182  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:36:30.182  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:36:33.112  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:36:33.113  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:36:33.113  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:36:33.113 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:36:33.113 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-867, x=532.0, y=203.0]
+2021-06-06 12:36:33.113 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-741, x=155.0, y=-68.0]
+2021-06-06 12:36:33.113 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1106, x=115.0, y=-303.0]
+2021-06-06 12:36:33.113 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-847, x=161.0, y=331.0]
+2021-06-06 12:36:33.113 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1399, x=143.0, y=-346.0]
+2021-06-06 12:36:33.113 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-709, x=-9.0, y=-18.0]
+2021-06-06 12:36:33.113 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1162, x=-196.0, y=1382.0]
+2021-06-06 12:36:33.113 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-679, x=-133.0, y=1328.0]
+2021-06-06 12:36:33.113 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1274, x=653.0, y=373.0]
+2021-06-06 12:36:33.113 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-597, x=437.0, y=-478.0]
+2021-06-06 12:36:33.113  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:36:33.114  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : inilization of Chat screen finshed
+2021-06-06 12:36:33.121  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:36:33.121  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:36:33.121  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:36:33.121  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:36:33.121  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:36:35.998  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:36:35.998  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:36:35.998  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:36:35.998 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:36:35.998 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1494, x=41.0, y=-479.0]
+2021-06-06 12:36:35.998 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-622, x=480.0, y=-344.0]
+2021-06-06 12:36:35.998 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-832, x=-193.0, y=-256.0]
+2021-06-06 12:36:35.998 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1277, x=558.0, y=223.0]
+2021-06-06 12:36:35.999 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-889, x=620.0, y=1148.0]
+2021-06-06 12:36:35.999 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-642, x=-96.0, y=1417.0]
+2021-06-06 12:36:35.999 DEBUG 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-839, x=45.0, y=1107.0]
+2021-06-06 12:36:35.999  INFO 16745 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:37:00.055  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:37:00.055  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:37:00.055  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:37:00.055  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:37:00.055  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:37:04.940  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:37:04.940  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:37:04.940  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:37:04.940 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:37:04.940 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1214, x=159.0, y=35.0]
+2021-06-06 12:37:04.940 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1308, x=35.0, y=1123.0]
+2021-06-06 12:37:04.940 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1442, x=311.0, y=359.0]
+2021-06-06 12:37:04.940 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1190, x=-96.0, y=209.0]
+2021-06-06 12:37:04.940 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-516, x=475.0, y=-134.0]
+2021-06-06 12:37:04.940 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1362, x=137.0, y=-37.0]
+2021-06-06 12:37:04.940 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-839, x=-98.0, y=522.0]
+2021-06-06 12:37:04.940 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1485, x=632.0, y=-464.0]
+2021-06-06 12:37:04.940 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1137, x=-194.0, y=969.0]
+2021-06-06 12:37:04.940 DEBUG 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-538, x=-206.0, y=290.0]
+2021-06-06 12:37:04.940  INFO 16745 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:37:29.242  INFO 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:37:29.242  INFO 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:37:29.242  INFO 16745 --- [http-nio-8080-exec-3] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:37:29.243  INFO 16745 --- [http-nio-8080-exec-3] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:37:29.243  INFO 16745 --- [http-nio-8080-exec-3] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:37:32.301  INFO 16745 --- [http-nio-8080-exec-3] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:37:32.301  INFO 16745 --- [http-nio-8080-exec-3] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:37:32.301  INFO 16745 --- [http-nio-8080-exec-3] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:37:32.301 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:37:32.301 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1216, x=581.0, y=373.0]
+2021-06-06 12:37:32.301 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1471, x=208.0, y=-494.0]
+2021-06-06 12:37:32.301 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-808, x=-13.0, y=1365.0]
+2021-06-06 12:37:32.301 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-792, x=52.0, y=387.0]
+2021-06-06 12:37:32.301 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-721, x=19.0, y=937.0]
+2021-06-06 12:37:32.301 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1145, x=-124.0, y=1234.0]
+2021-06-06 12:37:32.301 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1407, x=298.0, y=811.0]
+2021-06-06 12:37:32.301 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1118, x=127.0, y=673.0]
+2021-06-06 12:37:32.301 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-676, x=-204.0, y=-411.0]
+2021-06-06 12:37:32.301 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-839, x=421.0, y=808.0]
+2021-06-06 12:37:32.301 DEBUG 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1089, x=387.0, y=916.0]
+2021-06-06 12:37:32.301  INFO 16745 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:37:57.195  INFO 16745 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-06-06 12:37:57.195  INFO 16745 --- [RMI TCP Connection(2)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@17150d13: startup date [Sun Jun 06 12:36:16 EAT 2021]; root of context hierarchy
+2021-06-06 12:37:57.196  INFO 16745 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-06-06 12:25:05.175  INFO 20014 --- [main] com.digpro.codetest.AdminBootMain        : Starting AdminBootMain v1.0 on mutaz-Inspiron-5548 with PID 20014 (/home/mutaz/source_code/eclipse/workspaces/sccp/digpro/target/codetest-1.0.war started by mutaz in /home/mutaz/source_code/eclipse/workspaces/sccp/digpro)
+2021-06-06 12:25:05.178 DEBUG 20014 --- [main] com.digpro.codetest.AdminBootMain        : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2021-06-06 12:25:05.181  INFO 20014 --- [main] com.digpro.codetest.AdminBootMain        : No active profile set, falling back to default profiles: default
+2021-06-06 12:25:05.290  INFO 20014 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f4948e4: startup date [Sun Jun 06 12:25:05 CAT 2021]; root of context hierarchy
+2021-06-06 12:25:06.554  INFO 20014 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2021-06-06 12:25:06.646  INFO 20014 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:25:06.649  INFO 20014 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jsf.adminfaces-org.joinfaces.autoconfigure.adminfaces.AdminfacesProperties' of type [org.joinfaces.autoconfigure.adminfaces.AdminfacesProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:25:06.650  INFO 20014 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.adminfaces.AdminfacesAutoConfiguration' of type [org.joinfaces.autoconfigure.adminfaces.AdminfacesAutoConfiguration$$EnhancerBySpringCGLIB$$4454eff4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:25:06.673  INFO 20014 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$6d8f1c28] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:25:06.680  INFO 20014 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$21bda12e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:25:07.272  INFO 20014 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-06 12:25:07.307  INFO 20014 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-06 12:25:07.308  INFO 20014 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2021-06-06 12:25:07.321  INFO 20014 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/u01/app/oracle/product/11.2.0/xe/lib::/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2021-06-06 12:25:09.850  INFO 20014 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-06-06 12:25:10.661  INFO 20014 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-06 12:25:10.661  INFO 20014 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5371 ms
+2021-06-06 12:25:10.746  WARN 20014 --- [localhost-startStop-1] o.j.a.a.AdminfacesAutoConfiguration      : Changing primefaces fontAwesome from 'false' to 'true'.
+2021-06-06 12:25:10.758  WARN 20014 --- [localhost-startStop-1] o.j.a.a.AdminfacesAutoConfiguration      : Changing primefaces theme from 'aristo' to 'admin'.
+2021-06-06 12:25:11.104  INFO 20014 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2021-06-06 12:25:11.105  INFO 20014 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet adminLogoutServlet mapped to [/admin-logout]
+2021-06-06 12:25:11.112  INFO 20014 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-06-06 12:25:11.112  INFO 20014 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-06-06 12:25:11.112  INFO 20014 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'com.github.adminfaces.template.session.AdminFilter' to urls: [/*]
+2021-06-06 12:25:11.733  INFO 20014 --- [localhost-startStop-1] org.reflections.Reflections              : Reflections took 562 ms to scan 7 urls, producing 892 keys and 4314 values 
+2021-06-06 12:25:12.249  INFO 20014 --- [localhost-startStop-1] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.4 ( 20180405-0442 7a05fbdf38c7d725ccac9237e44de6dbc77bee7d) for context ''
+2021-06-06 12:25:12.576  INFO 20014 --- [localhost-startStop-1] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2021-06-06 12:25:13.484  INFO 20014 --- [localhost-startStop-1] .w.PostConstructApplicationEventListener : Running on PrimeFaces 7.0
+2021-06-06 12:25:13.488  INFO 20014 --- [localhost-startStop-1] c.g.a.t.event.AdminSystemEventListener   : Using Admin Template 1.0.2 and Admin Theme 1.0.2
+2021-06-06 12:25:13.489  INFO 20014 --- [localhost-startStop-1] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2021-06-06 12:25:13.489  INFO 20014 --- [localhost-startStop-1] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2021-06-06 12:25:14.319  INFO 20014 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-06-06 12:25:14.408  INFO 20014 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-06 12:25:14.415  INFO 20014 --- [main] com.digpro.codetest.AdminBootMain        : Started AdminBootMain in 10.29 seconds (JVM running for 10.966)
+2021-06-06 12:25:31.948  WARN 20014 --- [http-nio-8080-exec-1] c.g.a.t.e.CustomExceptionHandler         : 
+
+javax.faces.application.ViewExpiredException: viewId:/index.jsf - View /index.jsf could not be restored.
+	at com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:218) ~[javax.faces-2.3.4.jar!/:2.3.4]
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:100) ~[javax.faces-2.3.4.jar!/:2.3.4]
+	at com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:133) ~[javax.faces-2.3.4.jar!/:2.3.4]
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:201) ~[javax.faces-2.3.4.jar!/:2.3.4]
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:670) ~[javax.faces-2.3.4.jar!/:2.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.34.jar!/:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at com.github.adminfaces.template.session.AdminFilter.doFilter(AdminFilter.java:145) ~[admin-template-1.0.2.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-8.5.34.jar!/:8.5.34]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-06-06 12:27:48.765  INFO 20014 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f4948e4: startup date [Sun Jun 06 12:25:05 CAT 2021]; root of context hierarchy
+2021-06-06 12:27:48.770  INFO 20014 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-06-06 12:28:03.317  INFO 20291 --- [main] com.digpro.codetest.AdminBootMain        : Starting AdminBootMain v1.0 on mutaz-Inspiron-5548 with PID 20291 (/home/mutaz/source_code/eclipse/workspaces/sccp/digpro/target/codetest-1.0.war started by mutaz in /home/mutaz/source_code/eclipse/workspaces/sccp/digpro)
+2021-06-06 12:28:03.322 DEBUG 20291 --- [main] com.digpro.codetest.AdminBootMain        : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2021-06-06 12:28:03.325  INFO 20291 --- [main] com.digpro.codetest.AdminBootMain        : No active profile set, falling back to default profiles: default
+2021-06-06 12:28:03.387  INFO 20291 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4116aac9: startup date [Sun Jun 06 12:28:03 CAT 2021]; root of context hierarchy
+2021-06-06 12:28:04.533  INFO 20291 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2021-06-06 12:28:04.625  INFO 20291 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:28:04.630  INFO 20291 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jsf.adminfaces-org.joinfaces.autoconfigure.adminfaces.AdminfacesProperties' of type [org.joinfaces.autoconfigure.adminfaces.AdminfacesProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:28:04.631  INFO 20291 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.adminfaces.AdminfacesAutoConfiguration' of type [org.joinfaces.autoconfigure.adminfaces.AdminfacesAutoConfiguration$$EnhancerBySpringCGLIB$$c3ab9c1f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:28:04.655  INFO 20291 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$ece5c853] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:28:04.663  INFO 20291 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$a1144d59] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-06 12:28:05.109  INFO 20291 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-06 12:28:05.147  INFO 20291 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-06 12:28:05.147  INFO 20291 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2021-06-06 12:28:05.161  INFO 20291 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/u01/app/oracle/product/11.2.0/xe/lib::/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2021-06-06 12:28:07.735  INFO 20291 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-06-06 12:28:08.515  INFO 20291 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-06 12:28:08.515  INFO 20291 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5128 ms
+2021-06-06 12:28:08.657  WARN 20291 --- [localhost-startStop-1] o.j.a.a.AdminfacesAutoConfiguration      : Changing primefaces fontAwesome from 'false' to 'true'.
+2021-06-06 12:28:08.674  WARN 20291 --- [localhost-startStop-1] o.j.a.a.AdminfacesAutoConfiguration      : Changing primefaces theme from 'aristo' to 'admin'.
+2021-06-06 12:28:08.912  INFO 20291 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2021-06-06 12:28:08.914  INFO 20291 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet adminLogoutServlet mapped to [/admin-logout]
+2021-06-06 12:28:08.925  INFO 20291 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-06-06 12:28:08.926  INFO 20291 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-06-06 12:28:08.926  INFO 20291 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'com.github.adminfaces.template.session.AdminFilter' to urls: [/*]
+2021-06-06 12:28:09.500  INFO 20291 --- [localhost-startStop-1] org.reflections.Reflections              : Reflections took 491 ms to scan 7 urls, producing 892 keys and 4314 values 
+2021-06-06 12:28:09.939  INFO 20291 --- [localhost-startStop-1] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.4 ( 20180405-0442 7a05fbdf38c7d725ccac9237e44de6dbc77bee7d) for context ''
+2021-06-06 12:28:10.194  INFO 20291 --- [localhost-startStop-1] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2021-06-06 12:28:11.115  INFO 20291 --- [localhost-startStop-1] .w.PostConstructApplicationEventListener : Running on PrimeFaces 7.0
+2021-06-06 12:28:11.119  INFO 20291 --- [localhost-startStop-1] c.g.a.t.event.AdminSystemEventListener   : Using Admin Template 1.0.2 and Admin Theme 1.0.2
+2021-06-06 12:28:11.119  INFO 20291 --- [localhost-startStop-1] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2021-06-06 12:28:11.119  INFO 20291 --- [localhost-startStop-1] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2021-06-06 12:28:11.959  INFO 20291 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-06-06 12:28:12.027  INFO 20291 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-06 12:28:12.033  INFO 20291 --- [main] com.digpro.codetest.AdminBootMain        : Started AdminBootMain in 9.625 seconds (JVM running for 10.275)
+2021-06-06 12:30:08.018  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : inilization of Chat screen
+2021-06-06 12:30:08.019  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:30:08.019  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:30:08.019  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:30:08.020  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:30:08.061  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:30:12.418  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:30:12.419  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:30:12.419  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:30:12.419 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:30:12.419 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-838, x=202.0, y=883.0]
+2021-06-06 12:30:12.419 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1121, x=206.0, y=-49.0]
+2021-06-06 12:30:12.419 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-854, x=124.0, y=34.0]
+2021-06-06 12:30:12.419 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1235, x=277.0, y=512.0]
+2021-06-06 12:30:12.419 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1281, x=-64.0, y=-422.0]
+2021-06-06 12:30:12.419 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1228, x=-73.0, y=-56.0]
+2021-06-06 12:30:12.419 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1299, x=521.0, y=-236.0]
+2021-06-06 12:30:12.419 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-526, x=-157.0, y=1351.0]
+2021-06-06 12:30:12.419 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-608, x=567.0, y=1411.0]
+2021-06-06 12:30:12.420  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:30:12.420  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : inilization of Chat screen finshed
+2021-06-06 12:30:44.278  INFO 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:30:44.279  INFO 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:30:44.279  INFO 20291 --- [http-nio-8080-exec-6] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:30:44.279  INFO 20291 --- [http-nio-8080-exec-6] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:30:44.280  INFO 20291 --- [http-nio-8080-exec-6] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:30:50.780  INFO 20291 --- [http-nio-8080-exec-6] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:30:50.780  INFO 20291 --- [http-nio-8080-exec-6] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:30:50.780  INFO 20291 --- [http-nio-8080-exec-6] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:30:50.780 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:30:50.780 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-589, x=590.0, y=-397.0]
+2021-06-06 12:30:50.780 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-1277, x=574.0, y=-154.0]
+2021-06-06 12:30:50.781 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1433, x=402.0, y=-181.0]
+2021-06-06 12:30:50.781 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1406, x=636.0, y=236.0]
+2021-06-06 12:30:50.781 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-598, x=-188.0, y=1321.0]
+2021-06-06 12:30:50.781 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-995, x=70.0, y=21.0]
+2021-06-06 12:30:50.781 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-688, x=-56.0, y=-234.0]
+2021-06-06 12:30:50.781 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-768, x=-209.0, y=-7.0]
+2021-06-06 12:30:50.781 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-810, x=-43.0, y=538.0]
+2021-06-06 12:30:50.781 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-549, x=121.0, y=-54.0]
+2021-06-06 12:30:50.781 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1231, x=458.0, y=769.0]
+2021-06-06 12:30:50.781 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-559, x=154.0, y=1020.0]
+2021-06-06 12:30:50.781 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1119, x=567.0, y=1062.0]
+2021-06-06 12:30:50.781 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-670, x=-205.0, y=1441.0]
+2021-06-06 12:30:50.781  INFO 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:31:14.202  INFO 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:31:14.202  INFO 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:31:14.202  INFO 20291 --- [http-nio-8080-exec-7] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:31:14.202  INFO 20291 --- [http-nio-8080-exec-7] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:31:14.203  INFO 20291 --- [http-nio-8080-exec-7] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:31:21.708  INFO 20291 --- [http-nio-8080-exec-7] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:31:21.708  INFO 20291 --- [http-nio-8080-exec-7] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:31:21.709  INFO 20291 --- [http-nio-8080-exec-7] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:31:21.709 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:31:21.709 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1427, x=716.0, y=778.0]
+2021-06-06 12:31:21.709 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1354, x=200.0, y=670.0]
+2021-06-06 12:31:21.709 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1206, x=227.0, y=733.0]
+2021-06-06 12:31:21.709 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1447, x=678.0, y=765.0]
+2021-06-06 12:31:21.709 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-922, x=571.0, y=1012.0]
+2021-06-06 12:31:21.709 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1215, x=248.0, y=1418.0]
+2021-06-06 12:31:21.710 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1436, x=-216.0, y=931.0]
+2021-06-06 12:31:21.710 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-853, x=313.0, y=-364.0]
+2021-06-06 12:31:21.710 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-1137, x=353.0, y=105.0]
+2021-06-06 12:31:21.710 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1062, x=618.0, y=489.0]
+2021-06-06 12:31:21.710 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1401, x=270.0, y=610.0]
+2021-06-06 12:31:21.710 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1381, x=11.0, y=-402.0]
+2021-06-06 12:31:21.710 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-534, x=-37.0, y=1443.0]
+2021-06-06 12:31:21.710 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-973, x=-208.0, y=1271.0]
+2021-06-06 12:31:21.710  INFO 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:31:44.189  INFO 20291 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:31:44.190  INFO 20291 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:31:44.190  INFO 20291 --- [http-nio-8080-exec-10] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:31:44.190  INFO 20291 --- [http-nio-8080-exec-10] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:31:44.190  INFO 20291 --- [http-nio-8080-exec-10] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:31:46.393  INFO 20291 --- [http-nio-8080-exec-10] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:31:46.393  INFO 20291 --- [http-nio-8080-exec-10] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:31:46.393  INFO 20291 --- [http-nio-8080-exec-10] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:31:46.393 DEBUG 20291 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:31:46.393 DEBUG 20291 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-551, x=48.0, y=971.0]
+2021-06-06 12:31:46.393 DEBUG 20291 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1323, x=672.0, y=1119.0]
+2021-06-06 12:31:46.393 DEBUG 20291 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1356, x=280.0, y=657.0]
+2021-06-06 12:31:46.393 DEBUG 20291 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-763, x=154.0, y=1005.0]
+2021-06-06 12:31:46.393 DEBUG 20291 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1177, x=-205.0, y=1241.0]
+2021-06-06 12:31:46.393 DEBUG 20291 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-601, x=391.0, y=221.0]
+2021-06-06 12:31:46.394 DEBUG 20291 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1433, x=-233.0, y=-274.0]
+2021-06-06 12:31:46.394 DEBUG 20291 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1406, x=-44.0, y=-87.0]
+2021-06-06 12:31:46.394  INFO 20291 --- [http-nio-8080-exec-10] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:32:14.187  INFO 20291 --- [http-nio-8080-exec-9] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:32:14.187  INFO 20291 --- [http-nio-8080-exec-9] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:32:14.187  INFO 20291 --- [http-nio-8080-exec-9] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:32:14.188  INFO 20291 --- [http-nio-8080-exec-9] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:32:14.188  INFO 20291 --- [http-nio-8080-exec-9] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:32:18.057  INFO 20291 --- [http-nio-8080-exec-9] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:32:18.057  INFO 20291 --- [http-nio-8080-exec-9] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:32:18.058  INFO 20291 --- [http-nio-8080-exec-9] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:32:18.058 DEBUG 20291 --- [http-nio-8080-exec-9] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:32:18.058 DEBUG 20291 --- [http-nio-8080-exec-9] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-633, x=-127.0, y=657.0]
+2021-06-06 12:32:18.058 DEBUG 20291 --- [http-nio-8080-exec-9] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-569, x=-207.0, y=1495.0]
+2021-06-06 12:32:18.058 DEBUG 20291 --- [http-nio-8080-exec-9] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1391, x=335.0, y=-204.0]
+2021-06-06 12:32:18.058 DEBUG 20291 --- [http-nio-8080-exec-9] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-720, x=398.0, y=-441.0]
+2021-06-06 12:32:18.058 DEBUG 20291 --- [http-nio-8080-exec-9] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-680, x=618.0, y=-68.0]
+2021-06-06 12:32:18.058 DEBUG 20291 --- [http-nio-8080-exec-9] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1376, x=307.0, y=1373.0]
+2021-06-06 12:32:18.058 DEBUG 20291 --- [http-nio-8080-exec-9] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-1323, x=655.0, y=1145.0]
+2021-06-06 12:32:18.058 DEBUG 20291 --- [http-nio-8080-exec-9] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-727, x=373.0, y=-230.0]
+2021-06-06 12:32:18.058 DEBUG 20291 --- [http-nio-8080-exec-9] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-797, x=-22.0, y=1036.0]
+2021-06-06 12:32:18.058 DEBUG 20291 --- [http-nio-8080-exec-9] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-764, x=341.0, y=761.0]
+2021-06-06 12:32:18.058  INFO 20291 --- [http-nio-8080-exec-9] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:32:44.181  INFO 20291 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:32:44.181  INFO 20291 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:32:44.181  INFO 20291 --- [http-nio-8080-exec-1] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:32:44.182  INFO 20291 --- [http-nio-8080-exec-1] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:32:44.182  INFO 20291 --- [http-nio-8080-exec-1] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:32:47.771  INFO 20291 --- [http-nio-8080-exec-1] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:32:47.771  INFO 20291 --- [http-nio-8080-exec-1] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:32:47.771  INFO 20291 --- [http-nio-8080-exec-1] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:32:47.771 DEBUG 20291 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:32:47.771 DEBUG 20291 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-635, x=-197.0, y=744.0]
+2021-06-06 12:32:47.772 DEBUG 20291 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1281, x=468.0, y=248.0]
+2021-06-06 12:32:47.772 DEBUG 20291 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-548, x=-5.0, y=830.0]
+2021-06-06 12:32:47.772 DEBUG 20291 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-864, x=694.0, y=1198.0]
+2021-06-06 12:32:47.772 DEBUG 20291 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1016, x=239.0, y=230.0]
+2021-06-06 12:32:47.772 DEBUG 20291 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1046, x=-88.0, y=170.0]
+2021-06-06 12:32:47.772 DEBUG 20291 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1188, x=-106.0, y=462.0]
+2021-06-06 12:32:47.772 DEBUG 20291 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-852, x=548.0, y=-34.0]
+2021-06-06 12:32:47.772 DEBUG 20291 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1458, x=5.0, y=93.0]
+2021-06-06 12:32:47.772  INFO 20291 --- [http-nio-8080-exec-1] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:33:14.186  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:33:14.186  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:33:14.186  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:33:14.187  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:33:14.187  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:33:18.346  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:33:18.346  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:33:18.347  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:33:18.347 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:33:18.347 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-845, x=150.0, y=-49.0]
+2021-06-06 12:33:18.347 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1377, x=184.0, y=1036.0]
+2021-06-06 12:33:18.347 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-747, x=419.0, y=-333.0]
+2021-06-06 12:33:18.347 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1378, x=78.0, y=1189.0]
+2021-06-06 12:33:18.347 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1443, x=57.0, y=1358.0]
+2021-06-06 12:33:18.347 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-901, x=236.0, y=1406.0]
+2021-06-06 12:33:18.347 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1136, x=427.0, y=1360.0]
+2021-06-06 12:33:18.347 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1484, x=676.0, y=-275.0]
+2021-06-06 12:33:18.347 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1031, x=353.0, y=856.0]
+2021-06-06 12:33:18.347 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-974, x=154.0, y=1144.0]
+2021-06-06 12:33:18.347 DEBUG 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-544, x=-62.0, y=1474.0]
+2021-06-06 12:33:18.347  INFO 20291 --- [http-nio-8080-exec-3] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:33:44.178  INFO 20291 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:33:44.178  INFO 20291 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:33:44.178  INFO 20291 --- [http-nio-8080-exec-2] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:33:44.179  INFO 20291 --- [http-nio-8080-exec-2] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:33:44.179  INFO 20291 --- [http-nio-8080-exec-2] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:33:47.708  INFO 20291 --- [http-nio-8080-exec-2] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:33:47.708  INFO 20291 --- [http-nio-8080-exec-2] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:33:47.708  INFO 20291 --- [http-nio-8080-exec-2] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:33:47.708 DEBUG 20291 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:33:47.708 DEBUG 20291 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-593, x=165.0, y=-290.0]
+2021-06-06 12:33:47.708 DEBUG 20291 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-960, x=693.0, y=1371.0]
+2021-06-06 12:33:47.708 DEBUG 20291 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1036, x=725.0, y=367.0]
+2021-06-06 12:33:47.708 DEBUG 20291 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1341, x=627.0, y=70.0]
+2021-06-06 12:33:47.708 DEBUG 20291 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-1001, x=344.0, y=435.0]
+2021-06-06 12:33:47.708 DEBUG 20291 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-980, x=-77.0, y=913.0]
+2021-06-06 12:33:47.708 DEBUG 20291 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-1424, x=-240.0, y=926.0]
+2021-06-06 12:33:47.708 DEBUG 20291 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1276, x=-195.0, y=11.0]
+2021-06-06 12:33:47.708  INFO 20291 --- [http-nio-8080-exec-2] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:34:14.180  INFO 20291 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:34:14.180  INFO 20291 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:34:14.180  INFO 20291 --- [http-nio-8080-exec-4] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:34:14.181  INFO 20291 --- [http-nio-8080-exec-4] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:34:14.181  INFO 20291 --- [http-nio-8080-exec-4] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:34:25.510  INFO 20291 --- [http-nio-8080-exec-4] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:34:25.510  INFO 20291 --- [http-nio-8080-exec-4] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:34:25.510  INFO 20291 --- [http-nio-8080-exec-4] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:34:25.510 DEBUG 20291 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:34:25.510 DEBUG 20291 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1285, x=302.0, y=-125.0]
+2021-06-06 12:34:25.510 DEBUG 20291 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-937, x=172.0, y=1009.0]
+2021-06-06 12:34:25.510 DEBUG 20291 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1420, x=-107.0, y=-65.0]
+2021-06-06 12:34:25.510 DEBUG 20291 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1157, x=719.0, y=938.0]
+2021-06-06 12:34:25.510 DEBUG 20291 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1032, x=586.0, y=725.0]
+2021-06-06 12:34:25.510 DEBUG 20291 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-588, x=603.0, y=593.0]
+2021-06-06 12:34:25.510 DEBUG 20291 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-1067, x=559.0, y=1000.0]
+2021-06-06 12:34:25.510 DEBUG 20291 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-994, x=-191.0, y=1056.0]
+2021-06-06 12:34:25.510 DEBUG 20291 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1244, x=607.0, y=1360.0]
+2021-06-06 12:34:25.510 DEBUG 20291 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1042, x=140.0, y=149.0]
+2021-06-06 12:34:25.510 DEBUG 20291 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1152, x=276.0, y=-260.0]
+2021-06-06 12:34:25.510 DEBUG 20291 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-574, x=306.0, y=924.0]
+2021-06-06 12:34:25.510 DEBUG 20291 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1458, x=-218.0, y=1124.0]
+2021-06-06 12:34:25.510 DEBUG 20291 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-543, x=-147.0, y=-102.0]
+2021-06-06 12:34:25.511  INFO 20291 --- [http-nio-8080-exec-4] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:34:44.176  INFO 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:34:44.176  INFO 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:34:44.176  INFO 20291 --- [http-nio-8080-exec-6] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:34:44.177  INFO 20291 --- [http-nio-8080-exec-6] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:34:44.177  INFO 20291 --- [http-nio-8080-exec-6] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:34:48.482  INFO 20291 --- [http-nio-8080-exec-6] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:34:48.483  INFO 20291 --- [http-nio-8080-exec-6] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:34:48.484  INFO 20291 --- [http-nio-8080-exec-6] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:34:48.484 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:34:48.484 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-521, x=338.0, y=1254.0]
+2021-06-06 12:34:48.485 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1122, x=250.0, y=681.0]
+2021-06-06 12:34:48.485 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-579, x=-11.0, y=476.0]
+2021-06-06 12:34:48.485 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-912, x=-172.0, y=1195.0]
+2021-06-06 12:34:48.485 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-717, x=291.0, y=1106.0]
+2021-06-06 12:34:48.485 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-873, x=-14.0, y=1135.0]
+2021-06-06 12:34:48.485 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1051, x=-223.0, y=1369.0]
+2021-06-06 12:34:48.485 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1386, x=225.0, y=969.0]
+2021-06-06 12:34:48.485 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1317, x=115.0, y=858.0]
+2021-06-06 12:34:48.486 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-802, x=597.0, y=149.0]
+2021-06-06 12:34:48.486 DEBUG 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-809, x=-77.0, y=885.0]
+2021-06-06 12:34:48.486  INFO 20291 --- [http-nio-8080-exec-6] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:35:14.180  INFO 20291 --- [http-nio-8080-exec-5] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:35:14.180  INFO 20291 --- [http-nio-8080-exec-5] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:35:14.180  INFO 20291 --- [http-nio-8080-exec-5] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:35:14.181  INFO 20291 --- [http-nio-8080-exec-5] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:35:14.181  INFO 20291 --- [http-nio-8080-exec-5] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:35:17.295  INFO 20291 --- [http-nio-8080-exec-5] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:35:17.295  INFO 20291 --- [http-nio-8080-exec-5] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:35:17.295  INFO 20291 --- [http-nio-8080-exec-5] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:35:17.296 DEBUG 20291 --- [http-nio-8080-exec-5] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:35:17.296 DEBUG 20291 --- [http-nio-8080-exec-5] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-885, x=703.0, y=1002.0]
+2021-06-06 12:35:17.296 DEBUG 20291 --- [http-nio-8080-exec-5] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-503, x=201.0, y=1375.0]
+2021-06-06 12:35:17.296 DEBUG 20291 --- [http-nio-8080-exec-5] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1009, x=-231.0, y=958.0]
+2021-06-06 12:35:17.296 DEBUG 20291 --- [http-nio-8080-exec-5] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1363, x=235.0, y=607.0]
+2021-06-06 12:35:17.296 DEBUG 20291 --- [http-nio-8080-exec-5] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-867, x=-27.0, y=942.0]
+2021-06-06 12:35:17.296 DEBUG 20291 --- [http-nio-8080-exec-5] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1212, x=404.0, y=-231.0]
+2021-06-06 12:35:17.296 DEBUG 20291 --- [http-nio-8080-exec-5] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-682, x=343.0, y=1211.0]
+2021-06-06 12:35:17.296  INFO 20291 --- [http-nio-8080-exec-5] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:35:44.178  INFO 20291 --- [http-nio-8080-exec-8] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:35:44.178  INFO 20291 --- [http-nio-8080-exec-8] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:35:44.178  INFO 20291 --- [http-nio-8080-exec-8] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:35:44.178  INFO 20291 --- [http-nio-8080-exec-8] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:35:44.179  INFO 20291 --- [http-nio-8080-exec-8] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:35:51.399  INFO 20291 --- [http-nio-8080-exec-8] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:35:51.400  INFO 20291 --- [http-nio-8080-exec-8] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:35:51.400  INFO 20291 --- [http-nio-8080-exec-8] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:35:51.400 DEBUG 20291 --- [http-nio-8080-exec-8] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:35:51.400 DEBUG 20291 --- [http-nio-8080-exec-8] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-896, x=225.0, y=-333.0]
+2021-06-06 12:35:51.400 DEBUG 20291 --- [http-nio-8080-exec-8] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=STÖ-1130, x=271.0, y=1264.0]
+2021-06-06 12:35:51.400 DEBUG 20291 --- [http-nio-8080-exec-8] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-809, x=420.0, y=-88.0]
+2021-06-06 12:35:51.400 DEBUG 20291 --- [http-nio-8080-exec-8] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1059, x=133.0, y=702.0]
+2021-06-06 12:35:51.400 DEBUG 20291 --- [http-nio-8080-exec-8] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-984, x=401.0, y=-200.0]
+2021-06-06 12:35:51.400 DEBUG 20291 --- [http-nio-8080-exec-8] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-718, x=737.0, y=1132.0]
+2021-06-06 12:35:51.400 DEBUG 20291 --- [http-nio-8080-exec-8] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-887, x=168.0, y=1498.0]
+2021-06-06 12:35:51.400 DEBUG 20291 --- [http-nio-8080-exec-8] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1176, x=-28.0, y=780.0]
+2021-06-06 12:35:51.400 DEBUG 20291 --- [http-nio-8080-exec-8] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1030, x=126.0, y=346.0]
+2021-06-06 12:35:51.400  INFO 20291 --- [http-nio-8080-exec-8] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:36:14.180  INFO 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : getting new Coordinates from backend service
+2021-06-06 12:36:14.180  INFO 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : calling back end service to get new coordiantes
+2021-06-06 12:36:14.180  INFO 20291 --- [http-nio-8080-exec-7] c.d.c.b.service.CoordinateServiceImpl    : retriving new coordinates using coordinate repository
+2021-06-06 12:36:14.181  INFO 20291 --- [http-nio-8080-exec-7] c.d.c.b.r.CoordinateRepositryImpl        : getting data from the servlet using httpClient
+2021-06-06 12:36:14.182  INFO 20291 --- [http-nio-8080-exec-7] c.d.c.backend.util.OkHttpClientImpl      : getting data from  servlet
+2021-06-06 12:36:15.870  INFO 20291 --- [http-nio-8080-exec-7] c.d.c.b.r.CoordinateRepositryImpl        : parsing servlet's data and extarct coordinates portion using simple parser
+2021-06-06 12:36:15.871  INFO 20291 --- [http-nio-8080-exec-7] c.d.c.b.r.CoordinateRepositryImpl        : convert parser data  to  coordinates using Coordinates convertor
+2021-06-06 12:36:15.871  INFO 20291 --- [http-nio-8080-exec-7] c.d.c.b.service.CoordinateServiceImpl    : new coordinates hasbeen retived from  coordinate repository
+2021-06-06 12:36:15.871 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : Retrives coordinates data
+2021-06-06 12:36:15.871 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-935, x=116.0, y=1221.0]
+2021-06-06 12:36:15.871 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-773, x=110.0, y=165.0]
+2021-06-06 12:36:15.871 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1286, x=-221.0, y=33.0]
+2021-06-06 12:36:15.871 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-894, x=370.0, y=1067.0]
+2021-06-06 12:36:15.871 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1002, x=246.0, y=724.0]
+2021-06-06 12:36:15.871 DEBUG 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : current coordiantes Coordinate [name=ST-1323, x=-40.0, y=1284.0]
+2021-06-06 12:36:15.871  INFO 20291 --- [http-nio-8080-exec-7] c.d.c.frontend.jsf.bean.ChartJsView      : new Coordinates converted to ChartData
+2021-06-06 12:36:42.713  INFO 20291 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4116aac9: startup date [Sun Jun 06 12:28:03 CAT 2021]; root of context hierarchy
+2021-06-06 12:36:42.723  INFO 20291 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown

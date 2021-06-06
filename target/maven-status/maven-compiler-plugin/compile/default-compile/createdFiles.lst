@@ -1,0 +1,15 @@
+com/digpro/codetest/backend/util/CoordinateConvertor.class
+com/digpro/codetest/backend/domain/Coordinate.class
+com/digpro/codetest/backend/exception/CodeTestException.class
+com/digpro/codetest/backend/repository/BaseRepository.class
+com/digpro/codetest/backend/repository/CoordinateRepositryImpl.class
+com/digpro/codetest/frontend/jsf/bean/ChartJsView.class
+com/digpro/codetest/backend/util/HttpClient.class
+com/digpro/codetest/AdminBootMain.class
+com/digpro/codetest/backend/util/OkHttpClientImpl.class
+com/digpro/codetest/AdminBootApplication.class
+com/digpro/codetest/backend/util/Parser.class
+com/digpro/codetest/backend/service/CoordinateServiceImpl.class
+com/digpro/codetest/backend/util/SimpleParserImpl.class
+com/digpro/codetest/backend/service/CoordinateService.class
+com/digpro/codetest/backend/util/CoordinateConvertorImpl.class

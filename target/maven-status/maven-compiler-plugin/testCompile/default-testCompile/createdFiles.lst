@@ -1,0 +1,5 @@
+com/digpro/codetest/backend/util/CoordinateConvertorImplTest.class
+com/digpro/codetest/backend/util/SimpleParserImplTest.class
+com/digpro/codetest/backend/repository/CoordinateRepositryImplTest.class
+com/digpro/codetest/backend/service/CoordinateServiceImplTest.class
+com/digpro/codetest/backend/util/OkHttpClientImplTest.class
