@@ -39,9 +39,7 @@ Project code divided into 3 major parts +
 This starter runs via *SpringBoot* using the `maven` command:
 
 
-` mvn clean package && $JAVA_HOME/bin/java -jar target/codetest-1.0.war` *or*
-
-`./run.sh/run.cmd`
+` mvn clean package && $JAVA_HOME/bin/java -jar target/codetest-1.0.war` 
 
 open broswer and type the following URL http://localhost:8080/index.jsf 
 
